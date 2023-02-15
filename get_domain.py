@@ -9,7 +9,7 @@ def get_domain_name(url):
         url = url.replace("www.", "")
 
     if '/' in url:
-        #if url contains '/' after removal of prefixes t
+        #if url contains '/' after removal of prefixes then it slices to the point of '/'
         url = url[:url.index('/')]
 
     return url
